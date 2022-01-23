@@ -11,9 +11,10 @@
 :root {
     --cor0: #f57303;
     --cor1: #ef5d07;
-    --cor2: #0774db;
-    --cor3: #0161d9;
-    --cor4: #042572;
+    --cor2: #ca4a00;
+    --cor3: #0774db;
+    --cor4: #0161d9;
+    --cor5: #042572;
 
     --fonte-padrão: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -23,4 +24,25 @@
 * {
     margin: 0px;
     padding: 0px;
+}
+
+nav {
+    background-color: var(--cor3);
+}
+
+header {
+    background-image: linear-gradient(to top, var(--cor0), var(--cor2));
+    min-height: 50px;
+    padding: 5px;
+    text-align: center;
+    margin: 0px;
+}
+
+header > h1 {
+    color: white;
+    font-family: var(--fonte-destaque);
+    font-size: 2em;
+    font-weight: normal;
+    margin-top: 30px;
+    margin-bottom: 20px;
 }
