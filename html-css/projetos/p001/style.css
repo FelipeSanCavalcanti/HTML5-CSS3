@@ -12,10 +12,10 @@
     --cor0: #f57303;
     --cor1: #ef5d07;
     --cor2: #ca4a00;
-    --cor3: #0774db;
-    --cor4: #0161d9;
-    --cor5: #042572;
-    --cor6: #131313;
+    --cor3: #0161d9;
+    --cor4: #042572;
+    --cor5: #02123a;
+    --cor6: #5878bb;
 
     --fonte-padrão: Arial, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
@@ -67,7 +67,7 @@ nav > a{
 }
 
 picture img{
-    max-width: 1500px;
+    max-width: 1040px;
     width: 100%;
     margin: auto;
     display: block;
@@ -103,4 +103,50 @@ main p {
     text-indent: 30px;
     font-size: 1em;
     line-height: 2em;
+}
+
+main strong{
+    color: var(--cor4);
+    font-weight: bold;
+}
+
+main a {
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--cor4);
+    padding: 2px 4px;
+
+}
+
+main a:hover {
+    text-decoration: underline;
+    color: var(--cor4);
+}
+
+main img {
+    width: 100%;
+    max-width: 950px;
+    margin: auto;
+    margin-bottom: 40px;
+    display: block;
+}
+
+aside {
+    background-color: var(--cor0);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.432);
+}
+
+aside h3 {
+    color: white;
+    background-color: var(--cor2);
+    padding: 5px;
+    margin: -10px -10px 0px -10px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside ul {
+    list-style-position: inside;
+    columns: 2;
 }
