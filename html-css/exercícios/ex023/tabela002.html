@@ -13,6 +13,27 @@
         table{
             width: 400px;
             border-collapse: collapse;
+            position: relative;
+        }
+
+        Caption{
+            font-weight: bold;
+            font-size: 1.3em;
+            padding: 10px;
+            background-color: rgb(186, 218, 253);
+        }
+
+        tbody > tr:nth-child(odd){ /*odd = ímpar (2n -1)*/
+            background-color: white;
+        }
+
+        tbody > tr:nth-child(even){ /*even = par (2n)*/
+            background-color: rgb(186, 218, 253);
+        }
+
+        thead > tr > th{
+            position: sticky;
+            top: 0;
         }
 
         th{
@@ -33,12 +54,13 @@
     </style>
 </head>
 <body>
-    <h1>População brasileira</h1>
+    <h1>Uso de tabelas grandes</h1>
     <table>
+        <Caption>População das Unidades Federativas</Caption>
         <thead>
             <tr>
-                <th>Unidade federativa</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 90px;">População</th>
             </tr>
         </thead>
         <tbody>
@@ -179,10 +201,18 @@
         </tbody>
         <tfoot>
             <tr>
-                <th>Total</th>
+                <th scope="row">Total</th>
                 <th class="numero">214 318 031</th>
             </tr>
         </tfoot>
     </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellat unde, minima vel dolores quo fugiat molestias distinctio quam? Sit nesciunt tempora amet nobis numquam iste distinctio minus corporis officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum magni, qui esse quas adipisci voluptatum dolore fuga ab magnam, ratione excepturi doloribus nihil nobis vitae explicabo officia maiores! Corrupti, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestiae veniam consequuntur, suscipit autem est, praesentium eum maxime eaque animi at totam culpa earum amet tempora vitae voluptatem illum quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel earum quae, veniam eaque excepturi illum, et eum accusamus eligendi blanditiis? Nesciunt totam quas, fuga beatae quis distinctio ea harum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellat unde, minima vel dolores quo fugiat molestias distinctio quam? Sit nesciunt tempora amet nobis numquam iste distinctio minus corporis officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum magni, qui esse quas adipisci voluptatum dolore fuga ab magnam, ratione excepturi doloribus nihil nobis vitae explicabo officia maiores! Corrupti, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestiae veniam consequuntur, suscipit autem est, praesentium eum maxime eaque animi at totam culpa earum amet tempora vitae voluptatem illum quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel earum quae, veniam eaque excepturi illum, et eum accusamus eligendi blanditiis? Nesciunt totam quas, fuga beatae quis distinctio ea harum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellat unde, minima vel dolores quo fugiat molestias distinctio quam? Sit nesciunt tempora amet nobis numquam iste distinctio minus corporis officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum magni, qui esse quas adipisci voluptatum dolore fuga ab magnam, ratione excepturi doloribus nihil nobis vitae explicabo officia maiores! Corrupti, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestiae veniam consequuntur, suscipit autem est, praesentium eum maxime eaque animi at totam culpa earum amet tempora vitae voluptatem illum quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel earum quae, veniam eaque excepturi illum, et eum accusamus eligendi blanditiis? Nesciunt totam quas, fuga beatae quis distinctio ea harum.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia repellat unde, minima vel dolores quo fugiat molestias distinctio quam? Sit nesciunt tempora amet nobis numquam iste distinctio minus corporis officia. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum magni, qui esse quas adipisci voluptatum dolore fuga ab magnam, ratione excepturi doloribus nihil nobis vitae explicabo officia maiores! Corrupti, nesciunt! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore molestiae veniam consequuntur, suscipit autem est, praesentium eum maxime eaque animi at totam culpa earum amet tempora vitae voluptatem illum quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam vel earum quae, veniam eaque excepturi illum, et eum accusamus eligendi blanditiis? Nesciunt totam quas, fuga beatae quis distinctio ea harum.</p>
 </body>
 </html>
