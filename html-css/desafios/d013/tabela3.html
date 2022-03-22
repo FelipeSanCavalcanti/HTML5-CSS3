@@ -13,8 +13,15 @@
             width: 500px;
         }
 
-        th{
-            height: 50px;
+        thead th {
+            color: white;
+            background-color: rgb(63, 104, 192);
+        }
+
+        tr.color{
+            font-weight: bold;
+            color: white;
+            background-color: rgb(63, 104, 192);
         }
 
         th, td{
@@ -29,18 +36,22 @@
     <table>
         <thead>
             <tr>
-                <th>Área</th>
-                <th>Disciplinas</th>
-                <th>Notas</th>
-                <th>Média</th>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Disciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <th rowspan="5">Exatas</th>
+                <th rowspan="4">Exatas</th>
                 <td>Matemática</td>
-                <th >Nota 1</th>
-                <th >Nota 2</th>
+                <td>0.0</td>
+                <td>0.0</td>
                 <td>0.0</td>
             </tr>
             <tr>
@@ -60,6 +71,40 @@
                 <td>0.0</td>
                 <td>0.0</td>
                 <td>0.0</td>
+            </tr>
+            <tr class="color">
+                <td colspan="4">Média de Exatas</td>
+                <th>0.0</th>
+            </tr>
+
+            <tr>
+                <th rowspan="4">Humanas</th>
+                <td>Português</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>História</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Geografia</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <td>Filosofiaa</td>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr  class="color">
+                <td colspan="4">Média de Humanas</td>
+                <th>0.0</th>
             </tr>
         </tbody>
     </table>
