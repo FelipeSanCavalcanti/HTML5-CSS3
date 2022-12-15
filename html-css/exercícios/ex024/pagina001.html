@@ -9,6 +9,8 @@
     <style>
         body{
             font-family: Arial, Helvetica, sans-serif;
+
+            background-color: lightgray;
         }
 
         div#container{
@@ -24,26 +26,30 @@
             font-size: 1.5em;
             font-weight: bold;
             padding-bottom: 10px;
+            
         }
 
-        tbody > tr:nth-child(2n-1){
-            background-color: rgb(172, 161, 156);
+        tbody > tr:nth-child(even){
+            background-color: rgb(255, 255, 255);
+        }
+
+        th{
+            background-color: rgb(255, 255, 255);
+            
         }
 
         td, th{
             padding: 10px;
             border: 1px solid black;
+            
         }
 
         th#large{
             padding: 0px 55px;
         }
     </style>
-</head>
-<body>
-    <h1>Tabelas em telas pequenas</h1>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima molestias repudiandae rem ipsum itaque tempore! Aliquid similique deserunt voluptate, nobis dolores neque nesciunt ratione, harum vero enim iusto dolorum possimus.</p>
 
+</head>
     <div id="container">
         <table>
             <caption>Tabelas Reponsivas</caption>
